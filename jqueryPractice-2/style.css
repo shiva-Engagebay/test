@@ -17,3 +17,11 @@
     color: white;
     padding: 18px;
 }
+
+.change-heading {
+    text-align: center;
+    background-color: brown;
+    color: white;
+    padding: 14px;
+    margin-top: 10px;
+}
