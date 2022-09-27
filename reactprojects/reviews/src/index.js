@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import BirthDayApp from './projects/birthdayRemainder/birthdayApp';
-import TourApp from './projects/tours/tourApp';
 import ReviewApp from './reviews/reviewApp';
 
 
@@ -11,8 +9,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/*<App />*/}
-    {/*<BirthDayApp />*/}
-    {/*<TourApp />*/}
     <ReviewApp />
   </React.StrictMode>
 );
