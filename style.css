@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+}
+
+.remove-elements {
+    background-color: yellow;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.remove-child-elements {
+    background-color: lightcoral;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.test {
+    color: red;
+}
+
+.demo {
+    color: slategray;
+    font-size: 25px;
+}
+.demo-2 {
+    color: hotpink;
+    font-size: 25px;
+}
