@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import TodoAddItems from './TodoAddItems'
+import './App.css'
 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <section>
+    <section className='todo-app'>
       <TodoAddItems />
     </section>
   )

@@ -35,22 +35,22 @@ function TodoAddItems() {
 
   return (
     <div className="App">
-      <h2>Todo App</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-        />
-        <button type="submit">Add</button>
-      </form>
+      <h2 className='titleHeading'>Todo App</h2>
+      <div className='form-section'>
+        <form onSubmit={handleSubmit}>
+          <input
+            className='form-input'
+            type="text"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+          />
+          <button type="submit" className='submit-btn'>Add</button>
+        </form>
+      </div>
       <TodoList todos={todos} handleToggle={handleToggle} handleToggleAll={handleToggleAll} handleClearCompleted={handleClearCompleted}/>
     </div>
   );
 }
 
 export default TodoAddItems;
-
-
-
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import './todoList.css'
 
 
 function TodoList({ todos, handleToggle, handleToggleAll, handleClearCompleted }) {
@@ -12,32 +11,35 @@ function TodoList({ todos, handleToggle, handleToggleAll, handleClearCompleted }
   return (
     <div>
         <ul>
-            <li>
+            <li className='select-all-text'>
                 <input
+                    className="todo-check"
                     type="checkbox"
                     checked={allCompleted}
                     onChange={handleToggleAll}
+                    required
                 />
                 <span>Select All</span>
             </li>
             {todos.map((todo, index) => (
-                <li key={index}>
-                <input
-                    type="checkbox"
-                    checked={todo.completed}
-                    onChange={() => handleToggle(index)}
-                />
+                <li key={index} className='todo-data'>
+                    <input 
+                        className='todo-check'
+                        type="checkbox"
+                        checked={todo.completed}
+                        onChange={() => handleToggle(index)}
+                    />
                     <span className={todo.completed ? 'completed' : ''}>{todo.text}</span>
                 </li>
         ))}
         </ul>
         {selectedTodos.length > 0 && (
-        <div>
-          <p>{selectedTodos.length} item(s) selected</p>
-          <button onClick={handleClearCompleted}>Clear All</button>
+        <div className='selected-clear'>
+          <p className='items-text'>{selectedTodos.length} item(s) selected</p>
+          <button onClick={handleClearCompleted} className='clear-btn'>Clear</button>
         </div>
       )}
-        <p>{remainingCount} item(s) left</p>
+        <p className='items-left'>{remainingCount} item(s) left</p>
     </div>
   );
 }

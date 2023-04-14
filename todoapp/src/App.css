@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.titleHeading {
+    text-align: center;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+    color: dodgerblue;
+    font-size: 32px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.todo-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.App {
+    border: 1px solid rgb(78, 78, 78);
+    border-radius: 8px;
+    width: 600px;
+    padding: 20px;
+}
+
+.form-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-input {
+    border: none;
+    box-shadow: 2px 2px 4px lightgray;
+    height: 35px;
+    width: 400px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 7px;
+}
+
+.submit-btn {
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    margin-left: 20px;
+    border: none;
+    background-color: purple;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.todo-data {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: rgb(43, 43, 43);
+    list-style-type: none;
+    background-color: dodgerblue;
+    color: white;
+    height: 35px;
+    width: 522px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-left: 8px;
+    margin-left: 18px;
+    margin-top: 21px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.todo-check {
+    height: 15px;
+    width: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+.select-all-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    background-color: blueviolet;
+    border-radius: 10px;
+    color: white;
+    width: 150px;
+    height: 35px;
+    font-size: 16px;
+    margin-left: 175px;
+    margin-top: 21px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.selected-clear {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.clear-btn {
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 90px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.items-text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.items-left {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 21px;
+    background-color: brown;
+    color: white;
+    height: 35px;
+    width: 140px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 5px;
+}
